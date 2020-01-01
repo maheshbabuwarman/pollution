@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+struct personal {
+	char name[20];
+	int id;
+	float reading;
+	float total;
+};
+
+int main()
+{
+	int i;
+	double total=0;
+	struct personal area;
+	cout << "Enter name:";
+	cin >> area.name;
+	cout << "Enter ID:";
+	cin >> area.id;
+	for (i = 0; i < 5; i++) {
+		cout << endl << "Enter the polution reading no " << i + 1 << ": ";
+		cout << "";
+		cin >> area.reading;
+		total += area.reading;
+	
+		
+	}
+	cout << "The name of the area is :" << area.name << endl;
+	cout<<"The ID of the area is :"<< area.id << endl;
+	cout << "The Total Polution reading is :" << total << endl;
+	
+}
